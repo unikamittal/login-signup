@@ -1,0 +1,37 @@
+{
+    "temperature": 
+    [
+        {
+            "celsius": 37,
+            "Area": chandigarh
+        },
+        {
+            "celsius": 37,
+            "Area": gujarat
+        },
+        {
+            "celsius": 37,
+            "Area": amritsar
+        },
+        {
+            "celsius": 38,
+            "Area": gujarat
+        },
+        {
+            "celsius": 39,
+            "Area": chandigarh
+        },
+        {
+            "celsius": 38,
+            "Area": amritsar
+        },
+        {
+            "celsius": 36.02,
+            "Area":  gujarat
+        },
+        {
+            "celsius": 37,
+            "Area": chandigarh
+        }
+    ]   
+}

@@ -1,0 +1,36 @@
+{% extends 'index.html' %}
+{% block content  %}
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"><b>Medical Assistance</b></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="http://127.0.0.1:8000/accounts/">Home <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class = "container bg-light p-3 my-5 text-center" style="padding-top:10px;padding-bottom:10px">
+    <h3><b><center>LOGIN</center></b></h3>
+    <hr>
+</div>
+<div class = "container" style="padding-top:20px;padding-bottom:10px">
+<div class="alert alert-success" role="alert" style="padding-top:10px;padding-bottom:10px">
+
+<form method = 'POST'>
+ {% csrf_token %}
+    {{form.as_p}}
+    <div class = "row">
+    <button class=" btn btn-primary btn-lg" style="margin:5px;">login</button>
+    </form>
+    <button  class = "btn btn-primary btn-lg" style="margin:5px;" ><a href="http://127.0.0.1:8000/accounts/" style="color:white;">register</a></button>
+</div>
+</div>
+</>
+
+{% endblock %}
